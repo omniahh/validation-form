@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-image: url(bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            font-family:'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+    <script>
+        var str=location.search;
+
+        var fName=str.split("f")[1];
+        var fname=fName.split("&")[0];
+        var displayName=fname.split("=")[1];
+
+        var email=str.split("&")[1];
+        var displayEmail=email.split("=")[1];
+
+        var mobile=str.split("&")[3];
+        var displayMobile=mobile.split("=")[1];
+
+        var gender=str.split("&")[4];
+        var displayGender=gender.split("=")[1];
+
+       
+        document.write("<div> <h1>Happy New Year <span style='color:green;'>"+displayName+"</span></h1> </div>");
+        document.write("<div> <h2>Email:"+displayEmail+"</h2></div>");
+        document.write("<div> <h2>Mobile:"+displayMobile+"</h2></div>");
+        document.write("<div> <h2>Gender:"+displayGender+"</h2></div>");
+
+    </script>
+</head>
+<body>
+    <div>
+
+    </div>
+   
+</body>
+</html>

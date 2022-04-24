@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="index2.html" onsubmit="return clickSubmit()" >
+        <div class="name">
+            <label>Name </label>
+            <input type="text" name="fname" id="name"><br>
+            <span id="spanname">You must enter name </span><br>
+        </div>
+        <div class="email">
+            <label>Email </label>
+
+            <input type="email" name="email" id="email"><br>
+            <span id="spanEmail">You must enter email </span><br>
+        </div>
+        <div class="pass"><label>Password</label>
+
+            <input type="password" name="password" id="password"><br>
+            <span id="spanPassword">You must enter password </span><br>
+        </div>
+
+        <div class="mobile">
+            <label>Mobile </label>
+
+            <input type="number" name="mobile" id="mobile"><br>
+            <span id="spanMobile">You must enter mobile </span><br>
+
+        </div>
+
+        <div class="gender">
+            <label for="gender">Gender</label>
+
+            <select id="gender" name="gender">
+                <option value="female">Female</option>
+                <option value="Male">Male</option>
+
+            </select>
+
+        </div>
+        <div class="submit">
+
+            <input type="submit" value="Submit" id="submit">
+        </div>
+
+
+
+
+
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
